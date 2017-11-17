@@ -1,0 +1,4 @@
+<div id="siderbarregion" style="border:1px solid red;height:100px;">
+
+<squarespace:block-field id="{squarespace.page-id}" columns="12"/>
+</div>
