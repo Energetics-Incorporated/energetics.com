@@ -1,7 +1,10 @@
 
 .title-nav-wrapper {padding-left:30px;}
 
+/*  ############### Hide for 40th anniversary logo ################# 
+.site-title {width:20% !important;}
 .site-title img {width:100%;}
+*/
 
 .main-nav ul li a span, .main-nav ul li a:visited span {font-size:0.9em;letter-spacing:2px;}
 
@@ -153,6 +156,7 @@ html.no-borderimage .summary-item-list.sqs-gallery.sqs-gallery-design-carousel {
 .content-inner {
     margin: 0 auto;
     max-width: 96%;
+    background-color: #fff;
 }
 .collection-type-index .content-inner.has-content {
     padding: 20px 8%;
