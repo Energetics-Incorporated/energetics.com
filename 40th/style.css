@@ -21,7 +21,7 @@ a, a:visited {
 
 .tl-item {
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   position: relative;
   width: 25%;
   height: 100vh;
@@ -32,7 +32,7 @@ a, a:visited {
 }
 .tl-item:before, .tl-item:after {
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   content: '';
   position: absolute;
   left: 0;
@@ -50,7 +50,7 @@ a, a:visited {
   z-index: 1;
   opacity: 0;
   -webkit-transform: translate3d(0, 0, 0) translateY(50%);
-          transform: translate3d(0, 0, 0) translateY(50%);
+  transform: translate3d(0, 0, 0) translateY(50%);
   transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
   transition: opacity 0.5s ease, transform 0.5s ease;
   transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
@@ -64,7 +64,7 @@ a, a:visited {
 .tl-item:hover:before {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0) translateY(0);
-          transform: translate3d(0, 0, 0) translateY(0);
+  transform: translate3d(0, 0, 0) translateY(0);
   transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
   transition: opacity 1s ease, transform 1s ease 0.25s;
   transition: opacity 1s ease, transform 1s ease 0.25s, -webkit-transform 1s ease 0.25s;
@@ -72,30 +72,43 @@ a, a:visited {
 .tl-item:hover .tl-content {
   opacity: 1;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   transition: all 0.75s ease 0.5s;
 }
 .tl-item:hover .tl-bg {
   -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .tl-content {
   -webkit-transform: translate3d(0, 0, 0) translateY(25px);
-          transform: translate3d(0, 0, 0) translateY(25px);
+  transform: translate3d(0, 0, 0) translateY(25px);
   position: relative;
   z-index: 1;
   text-align: center;
   margin: 0 1.618em;
-  top: 55%;
+  top: 40%;
   opacity: 0;
 }
 .tl-content h1 {
   font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
   text-transform: uppercase;
-  color: #1779cf;
+  color: #24b543;
   font-size: 1.44rem;
   font-weight: normal;
+}
+.tl-content button {
+    background: #24b543;
+    border:0;
+    padding:0.5em 1.5em;
+    border-radius:3px;
+    color:#fff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border:3px solid transparent;
+}
+.tl-content button:hover{
+    border:3px solid #fff;
 }
 
 .tl-year {
@@ -114,7 +127,7 @@ a, a:visited {
 .tl-year:hover {opacity: 0.75;color:#1779cf;border:0;text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);}
 .tl-bg {
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -246,7 +259,11 @@ p.lead {
 #offcanvas-4 .wrapper {
   background-image: url(https://placeimg.com/800/800/nature); 
 }
-
+@media screen and (max-width: 1440px) {
+    .tl-year {font-size:1.8em;}
+    .wrapper .heading h2 {font-size:3.8em;}
+    .fr-offcanvas-close {background-size: 30px;height:30px;width: 30px;}
+}
 @media screen and (max-width: 1024px) {
     .tl-year {font-size:1.8em;}
     .wrapper .heading h2 {font-size:3.8em;}
@@ -256,6 +273,7 @@ p.lead {
     .tl-year {font-size:1.25em;}
     .wrapper .heading h2 {font-size:2.5em;}
     .fr-offcanvas-close {right:5px;top:5px;z-index:3;}
+    #timeheading {line-height: 1;font-size: .8em;position: fixed;background: #0f1f2c; padding: 0.2em;}
 }
 @media screen and (max-width: 425px) {
     #timeline {display: block;}
