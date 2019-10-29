@@ -197,10 +197,83 @@ a, a:visited {
 
 .wrapper {padding:0 2em;height: 100%;background-size: cover;position: relative;z-index: 1;color:#fff;}
 .wrapper::after {display: block;content: "";width:100%;height:100%;background-color:rgba(37, 40, 45, 0.75);position:absolute;left:0;top:0;z-index: -1;}
-.wrapper .heading {letter-spacing: 1px;font-weight: 200;padding: 0 0.3em; margin: 0;border-bottom: 1px solid #24b543; text-shadow:0px 0px 25px #fff;color:#fff;}
-.wrapper .heading h2 {font-size: 4.8em;font-weight: 200;display: inline;color: #24b543;letter-spacing: 2px;}
-.wrapper .heading a {cursor: pointer;color: #fff;background: #24b543; border-radius: 100px; padding: 2px 10px;}
+.wrapper .heading {
+    letter-spacing: 1px;
+    font-weight: 200;
+    padding: 0 0.3em; 
+    margin: 0 -2em;    
+    text-shadow:0px 0px 25px #fff;
+    color:#fff;
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.5);
+    text-align: center;
+    /*  border-bottom: 1px solid #24b543;  */
+}
+.wrapper .heading h2 {
+    font-size: 4.8em;
+    font-weight: 200;
+    display: inline;
+    color: #24b543;
+    letter-spacing: 2px;    
+    padding: 2px 0;
+    line-height: 1.6;
+    vertical-align: top;
+    position: relative;
+}
+.wrapper .heading a {cursor: pointer;color: #fff;background: #24b543; border-radius: 100px; padding: 2px 20px;}
+.wrapper .heading h2, .wrapper .heading a {
+    margin: 0 36px;
+}
+.heading a {position:relative;z-index:2;}
+.heading a::before{
+    content:"";
+    display:block;
+    position:absolute;
+    left:-70%;
+    top:0;
+    bottom:0;
+    margin:auto 0;
+    height:1px;
+    width:100%;
+    background:#24b543;
+    z-index:-1;
+}
+.heading a::after{
+    content:"";
+    display:block;
+    position:absolute;
+    right:-70%;
+    top:0;
+    bottom:0;
+    margin:auto 0;
+    height:1px;
+    width:100%;
+    background:#24b543;
+    z-index:-1;
+}
+.heading a:first-child::before, .heading a:last-child::after {
+    display: none;    
+}
 .wrapper .heading a:hover {opacity: 0.7;}
+.wrapper .heading h2 span::after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 30px;
+    border-color: #24b544 transparent transparent transparent;
+    content:"";
+    display:block;
+    position:absolute;
+    bottom: -40px;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    /* box-shadow: inset 0 0 1px #000; */
+}
+
+.wrapper .heading h2 span {
+    display: inline-block;
+    height: 100%;
+}
 .wrapper ul{padding: 0;margin:0;}
 .wrapper li {
     display: block;
@@ -268,12 +341,26 @@ p.lead {
     .tl-year {font-size:1.8em;}
     .wrapper .heading h2 {font-size:3.8em;}
     .fr-offcanvas-close {background-size: 30px;height:30px;width: 30px;}
+    .wrapper .heading h2, .wrapper .heading a {margin: 0 5px;}
+    .heading a::before {left: -10%;}
+    .heading a::after {right: -10%;}
 }
 @media screen and (max-width: 768px) {
     .tl-year {font-size:1.25em;}
     .wrapper .heading h2 {font-size:2.5em;}
+    .wrapper .heading a {padding: 2px 8px;}
     .fr-offcanvas-close {right:5px;top:5px;z-index:3;}
     #timeheading {line-height: 1;font-size: .8em;position: fixed;background: #0f1f2c; padding: 0.2em;}
+    .wrapper .heading h2 span::after {display: none;}
+    .fr-offcanvas--is-ready{width:85%;max-width: 85%;}    
+    .fr-offcanvas--is-ready[aria-hidden="false"] {
+        -webkit-transform: translateX(-110%);
+        transform: translateX(-110%);        
+    }
+    .fr-offcanvas--is-ready.fr-offcanvas--left[aria-hidden=false] {
+    -webkit-transform: translateX(110%);
+    transform: translateX(110%);
+}
 }
 @media screen and (max-width: 425px) {
     #timeline {display: block;}
@@ -281,10 +368,14 @@ p.lead {
     .tl-item {width:100%;cursor: pointer;}
     .tl-item:hover {width:100% !important;}
     #timeline:hover .tl-item { width: 100%;}
-    .tl-year {font-size:1.25em;}
+    .tl-year {font-size:2.75em;}
     .wrapper {height: auto;}
+    .wrapper .heading {padding:1.4em;}
     .wrapper .heading h2 {font-size:2.5em;}
     .fr-offcanvas-close {background-size: 20px;height:20px;width: 20px;right:5px;top:5px;z-index:3;}
     .mobile {display: block;}
     .tl-year.js-fr-offcanvas-open{display:none;}
+    .wrapper .heading a {display: block;}
+    .wrapper .heading h2, .wrapper .heading a {margin: 5px;}
+    .heading a::before, .heading a::after {display: none;}
 }
