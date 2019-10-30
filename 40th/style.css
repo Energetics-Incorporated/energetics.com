@@ -1,5 +1,5 @@
 body {
-  font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   line-height: 1.75;
   padding:0;
@@ -90,8 +90,7 @@ a, a:visited {
   top: 40%;
   opacity: 0;
 }
-.tl-content h1 {
-  font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+.tl-content h1 {  
   text-transform: uppercase;
   color: #24b543;
   font-size: 1.44rem;
@@ -141,8 +140,6 @@ a, a:visited {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
-#logo-40th {position: absolute;left:0;top:0;right:0;margin:auto;width:200px;}
-
 
 
 /*	Panel */
@@ -318,20 +315,103 @@ a, a:visited {
 p.lead {
     font-size: 1.8em;
 }
-#timeheading {position: absolute;top:0;left:0;right:0;margin:auto;font-size:2em;text-align: center;color:#fff;text-shadow:1px 1px 3px rgba(0, 0, 0, 0.85);z-index:1;}
-
+/*
+#timeheading {position: absolute;top:0;left:0;right:0;margin:auto;font-size:2em;text-align: center;color:#fff;text-shadow:1px 1px 3px rgba(0, 0, 0, 0.85);z-index:1;} */
+#timeheading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 2em;
+    text-align: center;        
+    z-index: 1;
+    width: 75%;    
+    padding: 1em 2em;
+    bottom: 0;
+    height: 90%;
+    box-shadow:0 0 20px 20px rgba(0, 0, 0, 0.22);
+    border-radius: 30px;
+    /*
+    background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.55) 5px,
+    rgba(0, 0, 0, 0.75)5px,
+    rgba(0, 0, 0, 0.75)12px
+    );*/
+    background-color:rgba(255, 255, 255, 0.93);
+    overflow-y:auto;
+    border: 5px solid #8395b3;
+}
+#timeheading h1{font-size: 1em;}
+#timeheading p {font-size: 0.5em;text-align: left;}
+#logo-40th {
+    width: 100px;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
 #offcanvas-1 .wrapper {
-  background-image: url(https://placeimg.com/801/801/nature); 
+  background-image: url(images/228315056.jpg); 
 }
 #offcanvas-2 .wrapper {
-  background-image: url(https://placeimg.com/802/802/nature); 
+  background-image: url(images/225598580.jpg); 
 }
 #offcanvas-3 .wrapper {
-  background-image: url(https://placeimg.com/803/803/nature); 
+  background-image: url(images/481338.jpg); 
 }
 #offcanvas-4 .wrapper {
-  background-image: url(https://placeimg.com/800/800/nature); 
+  background-image: url(images/290622687.jpg); 
 }
+
+    .modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.42);
+        opacity: 0;
+        visibility: hidden;
+        transform: scaleX(1.1) scaleY(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;        
+        
+    }
+    .modal-content {/*
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 24rem;
+        border-radius: 0.5rem;
+        */
+        padding:0 1em;
+    }
+    .close-button {
+    position: absolute;
+    right: 20px;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    top: 10px;
+    font-size: 1.5em;
+}
+    .close-button:hover {
+        color: darkgray;
+    }
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scaleX(1.0) scaleY(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+        z-index: 1;
+    }
+
 @media screen and (max-width: 1440px) {
     .tl-year {font-size:1.8em;}
     .wrapper .heading h2 {font-size:3.8em;}
