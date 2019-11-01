@@ -412,6 +412,7 @@ p.lead {
         z-index: 1;
     }
 
+#header-wrapper.otherclass {z-index: 51;}
 @media screen and (max-width: 1440px) {
     .tl-year {font-size:1.8em;}
     .wrapper .heading h2 {font-size:3.8em;}
