@@ -213,7 +213,7 @@ a, a:visited {
     letter-spacing: 2px;    
     padding: 2px 0;
     line-height: 1.6;
-    vertical-align: top;
+    vertical-align: middle;
     position: relative;
 }
 .wrapper .heading a {cursor: pointer;color: #fff;background: #24b543; border-radius: 100px; padding: 2px 20px;}
@@ -419,9 +419,10 @@ p.lead {
 }
 @media screen and (max-width: 1024px) {
     .tl-year {font-size:1.8em;}
-    .wrapper .heading h2 {font-size:3.8em;}
+    .wrapper .heading h2 {font-size:3.4em;}
     .fr-offcanvas-close {background-size: 30px;height:30px;width: 30px;}
     .wrapper .heading h2, .wrapper .heading a {margin: 0 5px;}
+    .wrapper .heading a {padding: 2px 8px;}
     .heading a::before {left: -10%;}
     .heading a::after {right: -10%;}
 }
