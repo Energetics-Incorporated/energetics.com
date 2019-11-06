@@ -617,7 +617,7 @@ p.lead {
     }
 
     .has-nav #mobileNav:hover,.has-nav #mobileMenu:hover,.has-nav #mobileNav:focus,.has-nav #mobileMenu:focus {
-        color: rgba(26,26,26,.7)
+        color:#999;
     }
 
     .has-nav #mobileMenu {
@@ -631,7 +631,7 @@ p.lead {
         top: 0;
         right: 0;
         bottom: 0;
-        width: 50%;
+        width: 30%;
         overflow: scroll;
         background-color: #fff;
         opacity: 0;
@@ -763,4 +763,12 @@ p.lead {
 
     .mobile-nav-open .sqs-mobile-info-bar+#mobileNav .main-nav .nav-wrapper {
         padding-bottom: 70px
+    }
+
+    body.fixed-header #header {width:100px !important;}
+
+    .mobile-nav-open .site-wrapper {
+      -webkit-transform: translate3d(-30%,0,0);
+      -moz-transform: translate3d(-30%,0,0);
+      transform: translate3d(-30%,0,0);
     }
