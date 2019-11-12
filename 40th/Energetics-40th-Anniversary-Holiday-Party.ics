@@ -1,0 +1,51 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:PUBLISH
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16011104T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010311T020000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20191112T214245Z
+DESCRIPTION:The 2019 holiday season also marks the 40th anniversary of Ener
+	getics’ founding. We’re celebrating the occasion with a 40th anniversa
+	ry–holiday party! Please join us for an afternoon of light refreshments 
+	and reminiscing.\n\n\n---\nPowered by AddEvent.com\n
+DTEND;TZID="Eastern Standard Time":20191205T160000
+DTSTAMP:20191112T210852Z
+DTSTART;TZID="Eastern Standard Time":20191205T130000
+LAST-MODIFIED:20191112T214245Z
+LOCATION:Samuel Morse Drive\, Suite 100 Columbia\, MD 21046
+PRIORITY:5
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Energetics 40th Anniversary-Holiday Party
+TRANSP:OPAQUE
+UID:1573592932addeventcom
+X-ALT-DESC;FMTTYPE=text/html:The 2019 holiday season also marks the 40th an
+	niversary of Energetics’ founding. We’re celebrating the occasion with
+	 a 40th anniversary–holiday party! Please join us for an afternoon of li
+	ght refreshments and reminiscing.<br><br><br>---<br>Powered by AddEvent.co
+	m
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
