@@ -9,8 +9,9 @@
 </head>
 
 <body>
+
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/gh/Energetics-Incorporated/energetics.com/40th/style.css" rel="stylesheet">
+<link href="https://energetics-incorporated.github.io/energetics.com/40th/style.css" rel="stylesheet">
 <img id="logo-40th" class="trigger" src="https://images.squarespace-cdn.com/content/53b2d171e4b058cbcb895ac5/1557929492919-5FG949I5NA0X3G53IG7V/Energetics+40+anniversary+logo+24bit.png?format=500w&content-type=image%2Fpng"> 
 <div class="modal">
   <div id="timeheading">
@@ -20,8 +21,12 @@
         <h1>Four decades turning ideas into impacts</h1>
         <p>This year marks the 40th Anniversary of Energetics’ founding. For 40 years, we have been advising those at the forefront of energy technology, helping to shape the way that the world responds to changing energy demands and the reality of our environment. Whether in the realm of energy management or energy security, smart technology or environmental science, everyone at Energetics shares the passion that sparked the founding of this company in 1979.</p>
         <p>A lot has changed since then. Energetics founders Jim Reed and Tom Bustard saw both need and opportunity: complex, universal challenges that required holistic solutions. Jim and Tom recognized energy’s consequence to a nation’s well-being and prosperity, and as keen analysts, they established Energetics to help clients tackle energy-based problems. Our first executives could not have foreseen exactly how critical a role power generation would play in an unknowable future, how energy would take center stage in the global conversation.</p>
-        <p>Over the years, our foundation in energy consulting has evolved into a capacity to help address some of today’s imperatives. Energetics has had the opportunity to work with clients in over a dozen nations, collaborating with federal, state, and local governments, as well as leaders in academia, NGOs, and industry. Our engineers, scientists, policy analysts, and social scientists have been honored to play roles in significant initiatives. We embrace these opportunities because our clientele have critical missions, remarkable visions, tremendous responsibilities for the future.</p>
+        <p>Over the years, our foundation in energy consulting has evolved into a capacity to help address some of today’s imperatives. Energetics has had the opportunity to work with clients in over a dozen nations, collaborating with federal, state, and local governments, as well as leaders in academia, NGOs, and industry. Our engineers, scientists, policy analysts, and social scientists have been honored to play roles in significant initiatives that have shaped our nation’s energy policy, advanced the use of alternative energy in multiple industries, and enhanced the resilience of our nation’s communities (check out the sidebar and 40th Anniversary timeline). We embrace these opportunities because our clientele have critical missions, remarkable visions, and tremendous responsibilities for the future.</p>
         <p>Many thanks to all who have allowed us to work with you, side by side, toward a secure and resilient horizon. Here’s to another 40 years!</p>
+        <p style="text-align: center;"><a class="close-div cta-1" href="#">Please explore our many milestones and achievements</a></p>
+
+
+
     </div>
   </div>
 </div>
@@ -167,6 +172,7 @@ var myOffcanvas = Froffcanvas();
  var modal = document.querySelector(".modal");
     var trigger = document.querySelector(".trigger");
     var closeButton = document.querySelector(".close-button");
+    var closeButton2 = document.querySelector(".close-div");
     var d = document.getElementById("header-wrapper");
 
 
@@ -183,6 +189,7 @@ var myOffcanvas = Froffcanvas();
 
     trigger.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
+    closeButton2.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
     toggleModal();
 
