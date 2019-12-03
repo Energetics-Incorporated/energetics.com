@@ -622,7 +622,7 @@ a.cta-1:after {
     .fr-offcanvas--is-ready.fr-offcanvas--left[aria-hidden=false] {
     -webkit-transform: translateX(110%);
     transform: translateX(110%); }
-    body.fixed-header #header {width:100% !important;}
+    body.fixed-header #header {width:100px !important;}
     html.touch #header {position:fixed;}
     .col-custom {
         width: 96%;
