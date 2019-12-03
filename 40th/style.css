@@ -556,6 +556,7 @@ a.cta-1:after {
     border-radius:1px
 }
 
+body.fixed-header #header {width:100px !important;}
 
 @media screen and (max-width: 1440px) {
     .tl-year {font-size:1.8em;}
@@ -622,7 +623,7 @@ a.cta-1:after {
     .fr-offcanvas--is-ready.fr-offcanvas--left[aria-hidden=false] {
     -webkit-transform: translateX(110%);
     transform: translateX(110%); }
-    body.fixed-header #header {width:100px !important;}
+    body.fixed-header #header {width:100% !important;}
     html.touch #header {position:fixed;}
     .col-custom {
         width: 96%;
